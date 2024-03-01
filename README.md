@@ -1,7 +1,5 @@
 # CSSttR-assignment
 
-[[toc]]
-
 ## Week 1 - My Plan
 
 ### Assignment
