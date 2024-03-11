@@ -1,0 +1,29 @@
+main {
+  perspective: 40em;
+  transform-style: preserve-3d;
+}
+
+main * {
+  transform-style: preserve-3d;
+}
+
+h1 {
+  background: var(--color-body);
+  transform: translateZ(1em);
+}
+
+.top-border {
+  background: black;
+  height: 1em;
+  transform: rotateX(-0.1turn);
+}
+
+.body {
+  display: grid;
+  place-items: center;
+  place-content: center;
+  width: var(--size-body);
+  aspect-ratio: 1;
+  background: var(--color-body);
+  transform: translateZ(calc(-1 * var(--depth)));
+}

@@ -1,0 +1,11 @@
+:root {
+  --size-player: 4em;
+  --size-screen: 16em;
+  --size-body: calc(var(--size-screen) + 2em);
+  --depth: 4em;
+
+  --color-player: #fcec0f;
+  --color-screen: #222;
+  --color-body: rgb(183, 0, 255);
+  --color-wall: #5558ff;
+}

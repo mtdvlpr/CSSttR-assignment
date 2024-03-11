@@ -1,0 +1,38 @@
+output {
+  display: grid;
+  place-items: center;
+  place-content: center;
+  width: var(--size-player);
+  aspect-ratio: 1;
+}
+
+output::before {
+  content: "";
+  display: block;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  width: calc(var(--size-player) / 2);
+  animation: eat 0.4s linear infinite;
+  background: conic-gradient(
+    var(--color-player) 55deg,
+    transparent 0 125deg,
+    var(--color-player) 0
+  );
+}
+
+@keyframes eat {
+  0%,
+  50% {
+    background: conic-gradient(
+      var(--color-player) 55deg,
+      transparent 0 125deg,
+      var(--color-player) 0
+    );
+  }
+  25% {
+    background: conic-gradient(
+      var(--color-player) 55deg,
+      var(--color-player) 0
+    );
+  }
+}

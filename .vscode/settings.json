@@ -1,0 +1,13 @@
+{
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "cSpell.ignorePaths": [".vscode", "LICENSE"],
+  "liveServer.settings.root": "/docs",
+  "liveServer.settings.mount": [["/CSSttR-assignment/", "./docs"]],
+  "cSpell.words": ["Avenir"],
+  "cSpell.ignoreWords": ["transform"]
+}

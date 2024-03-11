@@ -1,0 +1,19 @@
+@import url("./reset.css");
+@import url("./variables.css");
+@import url("./controls.css");
+@import url("./player.css");
+@import url("./movement.css");
+@import url("./screen.css");
+@import url("./box.css");
+
+/* the scene */
+body {
+  margin: 0;
+  height: 100dvh;
+
+  display: grid;
+  place-items: center;
+  place-content: center;
+
+  background-image: linear-gradient(dodgerblue, lightskyblue);
+}
