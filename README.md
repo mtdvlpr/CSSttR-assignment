@@ -46,3 +46,4 @@ I made the button in the arcade style and got the 3D working.
 
 ![second](https://github.com/mtdvlpr/CSSttR-assignment/assets/46671786/ea789e9b-c870-4064-930b-1abe7764c104)
 
+I tried to make it more in line with the actual game by having the pacman move indefinitely, using anchor links, but I couldn't get it to work, because the animation would stop when the link was clicked.
