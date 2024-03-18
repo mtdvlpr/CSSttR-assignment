@@ -25,3 +25,13 @@ I want to at least use the following CSS techniques:
 ### Challenges
 
 CSS in general is a challenge for me. Especially creating something visually appealing.
+
+## Week 2 - Design
+
+I have decided to go with the Retro Arcade Console, because I think it will be more fun and also challenging.
+
+I started with just a box with a square that can be controlled with a d-pad.
+
+## Week 3 - Development
+
+I created the arcade console around the screen and made the player a pacman.

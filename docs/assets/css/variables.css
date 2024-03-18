@@ -1,11 +1,16 @@
 :root {
+  /* Sizes */
   --size-player: 4em;
-  --size-screen: 16em;
+  --size-screen: calc(4 * var(--size-player));
   --size-body: calc(var(--size-screen) + 2em);
-  --depth: 4em;
+  --size-button: 240px;
+  --top-depth: 3rem;
 
+  /* Colors */
   --color-player: #fcec0f;
   --color-screen: #222;
   --color-body: rgb(183, 0, 255);
+  --color-controls: rgb(98, 4, 136);
   --color-wall: #5558ff;
+  --color-button: hsla(10, 90%, 40%, 1);
 }

@@ -9,13 +9,14 @@ main * {
 
 h1 {
   background: var(--color-body);
-  transform: translateZ(1em);
+  transform: translateZ(var(--top-depth)) translateY(var(--top-depth));
 }
 
 .top-border {
   background: black;
-  height: 1em;
-  transform: rotateX(-0.1turn);
+  height: var(--top-depth);
+  transform: rotateX(-0.25turn);
+  transform-origin: bottom;
 }
 
 .body {
@@ -25,5 +26,4 @@ h1 {
   width: var(--size-body);
   aspect-ratio: 1;
   background: var(--color-body);
-  transform: translateZ(calc(-1 * var(--depth)));
 }

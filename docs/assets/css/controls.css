@@ -3,14 +3,14 @@
 /* D-pad */
 .controls {
   transform: rotateX(0.1turn);
-  background: var(--color-body);
+  transform-origin: top;
+  background: var(--color-controls);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
     ".      up        ."
     "left    .    right"
     ".     down       .";
-
   width: var(--size-body);
   transition: 0.1s;
 }
@@ -39,4 +39,98 @@
 
 .controls input:active {
   box-shadow: inset 0.2em 0.2em 0.2em #0009;
+}
+
+.controls a {
+  position: relative;
+  display: inline-block;
+  width: var(--size-button);
+  aspect-ratio: 1;
+  border: 0;
+  margin: 1em;
+  outline: none;
+  background-color: #c2290a;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: box-shadow 200ms;
+  box-shadow: inset 0 calc(var(--size-button) / 24) 0 #da2e0b,
+    inset 0 calc(-1 * var(--size-button) / 24) calc(var(--size-button) / 60)
+      #aa2409,
+    0 0 calc(var(--size-button) / 60) #c2290a,
+    inset 0 0 calc(var(--size-button) / 30) #791a06,
+    inset 0 0 calc(var(--size-button) / 30) rgba(51, 51, 51, 0.5),
+    inset 0 0 calc(var(--size-button) / 60) calc(var(--size-button) / 12)
+      #c2290a,
+    inset 0 calc(-1 * var(--size-button) / 30) calc(var(--size-button) / 40)
+      calc(var(--size-button) / 10) rgba(51, 51, 51, 0.7),
+    inset 0 0 calc(var(--size-button) / 60) calc(var(--size-button) / 10)
+      #611405,
+    inset 0 0 calc(var(--size-button) / 60) calc(var(--size-button) / 10)
+      rgba(51, 51, 51, 0.7),
+    inset 0 0 calc(var(--size-button) / 120) calc(var(--size-button) / 9.2)
+      black,
+    inset 0 0 calc(var(--size-button) / 120) calc(var(--size-button) / 8)
+      rgba(247, 133, 110, 0.7),
+    inset 0 calc(var(--size-button) / 20) 0 calc(var(--size-button) / 8.5)
+      rgba(244, 71, 37, 0.7),
+    inset 0 calc(-1 * var(--size-button) / 20) calc(var(--size-button) / 60)
+      calc(var(--size-button) / 8.5) rgba(145, 31, 8, 0.2),
+    inset 0 0 0 calc(var(--size-button) / 5.5) #c2290a,
+    inset 0 calc(var(--size-button) / 2.5) calc(var(--size-button) / 7.5)
+      #aa2409,
+    inset 0 0 calc(var(--size-button) / 10) calc(var(--size-button) / 6) #911f08,
+    0 calc(var(--size-button) / 40) calc(var(--size-button) / 20)
+      rgba(0, 0, 0, 0.5);
+}
+
+.controls a:active {
+  box-shadow: inset 0 calc(var(--size-button) / 24) 0 #da2e0b,
+    inset 0 calc(-1 * var(--size-button) / 24) calc(var(--size-button) / 60)
+      #aa2409,
+    0 0 calc(var(--size-button) / 60) #c2290a,
+    inset 0 0 calc(var(--size-button) / 30) #791a06,
+    inset 0 0 calc(var(--size-button) / 30) rgba(51, 51, 51, 0.5),
+    inset 0 0 calc(var(--size-button) / 60) calc(var(--size-button) / 12)
+      #c2290a,
+    inset 0 calc(-1 * var(--size-button) / 30) calc(var(--size-button) / 40)
+      calc(var(--size-button) / 10) rgba(51, 51, 51, 0.7),
+    inset 0 0 calc(var(--size-button) / 60) calc(var(--size-button) / 10)
+      #611405,
+    inset 0 0 calc(var(--size-button) / 60) calc(var(--size-button) / 10)
+      rgba(51, 51, 51, 0.7),
+    inset 0 0 calc(var(--size-button) / 40) calc(var(--size-button) / 8.5) black,
+    inset 0 0 calc(var(--size-button) / 120) calc(var(--size-button) / 7.5)
+      rgba(247, 133, 110, 0.2),
+    inset 0 calc(var(--size-button) / 20) 0 28px rgba(244, 71, 37, 0.5),
+    inset 0 calc(-1 * var(--size-button) / 20) calc(var(--size-button) / 60)
+      28px rgba(97, 20, 5, 0.2),
+    inset 0 0 0 calc(var(--size-button) / 5.5) #b32609,
+    inset 0 calc(var(--size-button) / 2.5) calc(var(--size-button) / 7.5)
+      #9b2108,
+    inset 0 0 calc(var(--size-button) / 10) calc(var(--size-button) / 6) #791a06,
+    0 calc(var(--size-button) / 40) calc(var(--size-button) / 20)
+      rgba(0, 0, 0, 0.5);
+  background-color: #b8270a;
+}
+
+.controls a:active::before {
+  opacity: 0.5;
+}
+
+.controls a::before {
+  content: "";
+  position: absolute;
+  bottom: calc(var(--size-button) / 4.5);
+  left: calc(var(--size-button) / 3.6);
+  display: block;
+  width: calc(var(--size-button) / 2.2);
+  height: calc(var(--size-button) / 3.3);
+  background: rgba(247, 133, 110, 0.2);
+  background: linear-gradient(
+    to top,
+    rgba(250, 173, 158, 0.3) 0%,
+    rgba(194, 41, 10, 0.1) 100%
+  );
+  border-radius: 40% 40% 60% 60%;
+  transition: opacity 200ms;
 }
