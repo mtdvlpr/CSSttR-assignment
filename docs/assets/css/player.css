@@ -11,6 +11,16 @@ output {
 output::before {
   content: "";
   display: block;
+  position: absolute;
+  width: calc(var(--size-player) / 2 - 0.2rem);
+  height: calc(var(--size-player) / 4);
+  background: var(--color-screen);
+  z-index: -1;
+}
+
+output::after {
+  content: "";
+  display: block;
   aspect-ratio: 1;
   border-radius: 50%;
   width: calc(var(--size-player) / 2);

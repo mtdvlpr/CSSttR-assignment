@@ -15,10 +15,20 @@ article {
 article > output {
   position: absolute;
 }
-/*
+
 article > div {
+  display: grid;
+  place-items: center;
+  place-content: center;
   width: var(--size-player);
   aspect-ratio: 1;
-  border: 1px solid green;
 }
-*/
+
+article > div::before {
+  content: "";
+  display: block;
+  width: calc(var(--size-player) / 4);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: white;
+}

@@ -1,8 +1,8 @@
 :root {
   /* Sizes */
-  --size-player: 4em;
+  --size-player: 4rem;
   --size-screen: calc(4 * var(--size-player));
-  --size-body: calc(var(--size-screen) + 2em);
+  --size-body: calc(var(--size-screen) + 2rem);
   --size-bottom: 3rem;
   --size-button: 3rem;
 
