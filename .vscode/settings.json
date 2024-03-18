@@ -8,6 +8,6 @@
   "cSpell.ignorePaths": [".vscode", "LICENSE"],
   "liveServer.settings.root": "/docs",
   "liveServer.settings.mount": [["/CSSttR-assignment/", "./docs"]],
-  "cSpell.words": ["Avenir"],
+  "cSpell.words": ["Avenir", "Pacfont"],
   "cSpell.ignoreWords": ["transform"]
 }
