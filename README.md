@@ -34,4 +34,15 @@ I started with just a box with a square that can be controlled with a d-pad.
 
 ## Week 3 - Development
 
-I created the arcade console around the screen and made the player a pacman.
+I created the arcade console around the screen and made the player a pacman, but I had some trouble getting the 3D effects right.
+
+![first](https://github.com/mtdvlpr/CSSttR-assignment/assets/46671786/8e564bb5-d49b-4eaa-b053-86b677e5648a)
+
+The rest of the week, I was unable to work on the assignment, due to personal circumstances, so I've got some work to do.
+
+## Week 4 - Final work
+
+I made the button in the arcade style and got the 3D working.
+
+![second](https://github.com/mtdvlpr/CSSttR-assignment/assets/46671786/ea789e9b-c870-4064-930b-1abe7764c104)
+
