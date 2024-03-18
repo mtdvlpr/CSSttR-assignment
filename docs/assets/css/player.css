@@ -1,3 +1,5 @@
+/* Player */
+
 output {
   display: grid;
   place-items: center;
@@ -20,6 +22,7 @@ output::before {
   );
 }
 
+/* Eat animation */
 @keyframes eat {
   0%,
   50% {

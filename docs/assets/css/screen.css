@@ -1,9 +1,9 @@
+/* Screen */
+
 article {
   width: var(--size-screen);
   aspect-ratio: 1;
   background-color: var(--color-screen);
-
-  /* output starts at left bottom */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -15,9 +15,10 @@ article {
 article > output {
   position: absolute;
 }
-
+/*
 article > div {
   width: var(--size-player);
   aspect-ratio: 1;
   border: 1px solid green;
 }
+*/

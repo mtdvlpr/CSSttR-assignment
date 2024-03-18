@@ -1,5 +1,8 @@
+/* Movement */
+
 :root,
 output {
+  /* Transition back very slowly */
   transition: --x 10000s linear, --y 10000s linear;
 }
 
@@ -8,15 +11,15 @@ output {
     calc((var(--size-screen) - var(--size-player)) * var(--y, 0));
 }
 
-:root:has(input:active),
-:root:has(input:active) output {
+:root:has(button:active),
+:root:has(button:active) output {
   transition: --x 2s linear, --y 2s linear;
 }
 
 /* Listen for button active to change move animation */
 
-/* up */
-:root:has(input:nth-of-type(1):active) {
+/* Up */
+:root:has(button:nth-of-type(1):active) {
   --y: 10000;
   output {
     --y: 0.00001;
@@ -24,8 +27,8 @@ output {
   }
 }
 
-/* left */
-:root:has(input:nth-of-type(2):active) {
+/* Left */
+:root:has(button:nth-of-type(2):active) {
   --x: 10000;
   output {
     --x: 0.00001;
@@ -33,16 +36,16 @@ output {
   }
 }
 
-/* right */
-:root:has(input:nth-of-type(3):active) {
+/* Right */
+:root:has(button:nth-of-type(3):active) {
   --x: 30000;
   output {
     --x: 1;
   }
 }
 
-/* down */
-:root:has(input:nth-of-type(4):active) {
+/* Down */
+:root:has(button:nth-of-type(4):active) {
   --y: 30000;
   output {
     --y: 1;
@@ -61,7 +64,7 @@ output {
   inherits: false;
   initial-value: 0;
 }
-
+/*
 @container style(--x: 10000) {
   :root {
     body {
@@ -77,27 +80,4 @@ output {
     }
   }
 }
-
-@container style(--x: 15000) {
-  :root {
-    body {
-      background-image: linear-gradient(orange, yellow);
-    }
-  }
-}
-
-@container style(--x: 20000) {
-  :root {
-    body {
-      background-image: linear-gradient(orange, yellow);
-    }
-  }
-}
-
-@container style(--x: 25000) {
-  :root {
-    body {
-      background-image: linear-gradient(orange, yellow);
-    }
-  }
-}
+*/

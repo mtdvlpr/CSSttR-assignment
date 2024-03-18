@@ -1,3 +1,5 @@
+/* Arcade box */
+
 main {
   perspective: 40em;
   transform-style: preserve-3d;
@@ -7,23 +9,37 @@ main * {
   transform-style: preserve-3d;
 }
 
+/* Top */
 h1 {
   background: var(--color-body);
   transform: translateZ(var(--top-depth)) translateY(var(--top-depth));
 }
 
-.top-border {
-  background: black;
+/* Top bottom */
+main > div {
+  background: var(--color-controls);
   height: var(--top-depth);
   transform: rotateX(-0.25turn);
   transform-origin: bottom;
 }
 
-.body {
+/* Body */
+main > section {
   display: grid;
   place-items: center;
   place-content: center;
   width: var(--size-body);
   aspect-ratio: 1;
   background: var(--color-body);
+}
+
+/* Bottom */
+footer > div {
+  position: absolute;
+  bottom: 0;
+  background: black;
+  height: var(--size-bottom);
+  width: var(--size-body);
+  transform: translateY(var(--size-bottom)) rotateX(-0.1turn);
+  transform-origin: top;
 }
