@@ -46,4 +46,16 @@ I made the button in the arcade style and got the 3D working.
 
 ![second](https://github.com/mtdvlpr/CSSttR-assignment/assets/46671786/ea789e9b-c870-4064-930b-1abe7764c104)
 
-I tried to make it more in line with the actual game by having the pacman move indefinitely, using anchor links, but I couldn't get it to work, because the animation would stop when the link was clicked.
+I tried to add walls using `@container style` queries, but I couldn't get it to work, because it could only target the `--x` and `--y` min/max values and not the intermediate values. I tried setting the `--x` and `--y` values at the root and multiply them with 1000, set other, set bigger values that would be easier to calculate the step for, but nothing worked.  I used the following code to test the functionality:
+
+```css
+@container style(--x: xxx) {
+  :root {
+    body {
+      background-image: linear-gradient(green, lightgreen);
+    }
+  }
+}
+```
+
+I tried to make it more in line with the actual game by having the pacman move indefinitely, using anchor links, but I couldn't get it to work, because the previous animation would reset when the link was clicked, which caused the pacman to move in a weird diagonal way.
