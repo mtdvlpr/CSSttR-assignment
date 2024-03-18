@@ -11,6 +11,7 @@ main * {
 
 /* Top */
 h1 {
+  width: var(--size-body);
   background: var(--color-body);
   transform: translateZ(var(--top-depth)) translateY(var(--top-depth));
 }
@@ -35,6 +36,7 @@ main > section {
 
 /* Bottom */
 footer > div {
+  width: var(--size-body);
   position: absolute;
   bottom: 0;
   background: black;

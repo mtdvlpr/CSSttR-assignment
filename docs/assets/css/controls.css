@@ -98,9 +98,10 @@ footer button:active {
     inset 0 0 calc(var(--size-button) / 40) calc(var(--size-button) / 8.5) black,
     inset 0 0 calc(var(--size-button) / 120) calc(var(--size-button) / 7.5)
       rgba(247, 133, 110, 0.2),
-    inset 0 calc(var(--size-button) / 20) 0 28px rgba(244, 71, 37, 0.5),
+    inset 0 calc(var(--size-button) / 20) 0 calc(var(--size-button) / 8.6)
+      rgba(244, 71, 37, 0.5),
     inset 0 calc(-1 * var(--size-button) / 20) calc(var(--size-button) / 60)
-      28px rgba(97, 20, 5, 0.2),
+      calc(var(--size-button) / 8.6) rgba(97, 20, 5, 0.2),
     inset 0 0 0 calc(var(--size-button) / 5.5) #b32609,
     inset 0 calc(var(--size-button) / 2.5) calc(var(--size-button) / 7.5)
       #9b2108,

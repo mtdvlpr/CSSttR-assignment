@@ -4,7 +4,7 @@
   --size-screen: calc(4 * var(--size-player));
   --size-body: calc(var(--size-screen) + 2rem);
   --size-bottom: 3rem;
-  --size-button: 3rem;
+  --size-button: calc(var(--size-body) / 4);
 
   /* Depths */
   --top-depth: 3rem;
