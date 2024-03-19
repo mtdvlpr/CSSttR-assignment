@@ -11,6 +11,7 @@ main * {
 
 /* Top */
 h1 {
+  text-align: center;
   color: var(--color-player);
   font-family: var(--font-pacman);
   width: var(--size-body);
@@ -38,7 +39,6 @@ main > section {
 
 /* Bottom */
 footer > div {
-  width: var(--size-body);
   position: absolute;
   bottom: 0;
   background: black;
