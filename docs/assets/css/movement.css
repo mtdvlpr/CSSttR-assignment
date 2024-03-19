@@ -4,9 +4,15 @@
   /* Transition back very slowly */
   transition: --x 10000s linear, --y 10000s linear;
 
+  /* Player location in steps */
+  --steps: calc(var(--size-grid) * var(--size-grid));
+  --x-steps: max(calc(var(--x, 0) * var(--steps) + 0.49), 1);
+  --y-steps: max(calc(var(--y, 0) * var(--steps) + 0.49), 1);
+
   /* Move player */
   &:has(button:active) {
-    transition: --x 2s linear, --y 2s linear;
+    transition: --x var(--transition-player) linear,
+      --y var(--transition-player) linear;
   }
 }
 
@@ -47,6 +53,7 @@ output {
   }
 }
 
+/* Player position */
 @property --x {
   syntax: "<number>";
   inherits: true;
@@ -59,26 +66,15 @@ output {
   initial-value: 0;
 }
 
-@container style(--x: 10000) {
-  :root {
-    body {
-      background-image: linear-gradient(green, lightgreen);
-    }
-  }
+/* Player steps */
+@property --x-steps {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
 }
 
-@container style(--x: 30000) {
-  :root {
-    body {
-      background-image: linear-gradient(red, pink);
-    }
-  }
-}
-
-@container style(--run: 30000) {
-  :root {
-    body {
-      background-image: linear-gradient(orange, yellow) !important;
-    }
-  }
+@property --y-steps {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
 }

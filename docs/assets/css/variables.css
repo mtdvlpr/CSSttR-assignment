@@ -1,13 +1,11 @@
 :root {
   /* Sizes */
+  --size-grid: 4;
   --size-player: 4rem;
-  --size-screen: calc(4 * var(--size-player));
+  --size-screen: calc(var(--size-grid) * var(--size-player));
   --size-body: calc(var(--size-screen) + 2rem);
   --size-bottom: 3rem;
   --size-button: calc(var(--size-body) / 4);
-
-  /* Depths */
-  --top-depth: 3rem;
 
   /* Colors */
   --color-player: #fcec0f;
@@ -15,4 +13,11 @@
   --color-body: rgb(183, 0, 255);
   --color-controls: rgb(98, 4, 136);
   --color-wall: #5558ff;
+
+  /* Depths */
+  --top-depth: 3rem;
+
+  /* Transitions */
+  --transition-player: 2s; /* Player speed */
+  --transition-dots: 1s 30s; /* Time to eat dots */
 }

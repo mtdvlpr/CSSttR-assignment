@@ -5,6 +5,7 @@
 @import url("./movement.css");
 @import url("./screen.css");
 @import url("./box.css");
+@import url("./dots.css");
 
 /* The scene */
 body {

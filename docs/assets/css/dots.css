@@ -1,0 +1,334 @@
+/* Dots */
+article > ul {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  transition: --eaten1 var(--transition-dots), --eaten2 var(--transition-dots),
+    --eaten3 var(--transition-dots), --eaten4 var(--transition-dots),
+    --eaten5 var(--transition-dots), --eaten6 var(--transition-dots),
+    --eaten7 var(--transition-dots), --eaten8 var(--transition-dots),
+    --eaten9 var(--transition-dots), --eaten10 var(--transition-dots),
+    --eaten11 var(--transition-dots), --eaten12 var(--transition-dots),
+    --eaten13 var(--transition-dots), --eaten14 var(--transition-dots),
+    --eaten15 var(--transition-dots), --eaten16 var(--transition-dots);
+
+  /* A dot */
+  > li {
+    display: grid;
+    place-items: center;
+    place-content: center;
+    width: var(--size-player);
+    aspect-ratio: 1;
+
+    transition: var(--transition-dots);
+
+    &::before {
+      content: "";
+      display: block;
+      width: calc(var(--size-player) / 4);
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: white;
+    }
+  }
+}
+
+/* ROW 1 */
+
+@container style(--x-steps:1) and style(--y-steps:1) {
+  article {
+    --eaten1: 1;
+    transition: 0s;
+
+    li:nth-of-type(1) {
+      opacity: 0;
+      transition: 0s;
+    }
+  }
+}
+
+@container style(--x-steps:6) and style(--y-steps:1) {
+  article {
+    --eaten2: 1;
+    transition: 0s;
+
+    li:nth-of-type(2) {
+      opacity: 0;
+      transition: 0s;
+    }
+  }
+}
+
+@container style(--x-steps:11) and style(--y-steps:1) {
+  article {
+    --eaten3: 1;
+    transition: 0s;
+
+    li:nth-of-type(3) {
+      opacity: 0;
+      transition: 0s;
+    }
+  }
+}
+
+@container style(--x-steps:16) and style(--y-steps:1) {
+  article {
+    --eaten4: 1;
+    transition: 0s;
+
+    li:nth-of-type(4) {
+      opacity: 0;
+      transition: 0s;
+    }
+  }
+}
+
+/* ROW 2 */
+
+@container style(--x-steps:1) and style(--y-steps:6) {
+  article {
+    --eaten5: 1;
+    transition: 0s;
+
+    li:nth-of-type(5) {
+      opacity: 0;
+      transition: 0s;
+    }
+  }
+}
+
+@container style(--x-steps:6) and style(--y-steps:6) {
+  article {
+    --eaten6: 1;
+    transition: 0s;
+
+    li:nth-of-type(6) {
+      opacity: 0;
+      transition: 0s;
+    }
+  }
+}
+
+@container style(--x-steps:11) and style(--y-steps:6) {
+  article {
+    --eaten7: 1;
+    transition: 0s;
+
+    li:nth-of-type(7) {
+      opacity: 0;
+      transition: 0s;
+    }
+  }
+}
+
+@container style(--x-steps:16) and style(--y-steps:6) {
+  article {
+    --eaten8: 1;
+    transition: 0s;
+
+    li:nth-of-type(8) {
+      opacity: 0;
+      transition: 0s;
+    }
+  }
+}
+
+/* ROW 3 */
+
+@container style(--x-steps:1) and style(--y-steps:11) {
+  article {
+    --eaten9: 1;
+    transition: 0s;
+
+    li:nth-of-type(9) {
+      opacity: 0;
+      transition: 0s;
+    }
+  }
+}
+
+@container style(--x-steps:6) and style(--y-steps:11) {
+  article {
+    --eaten10: 1;
+    transition: 0s;
+
+    li:nth-of-type(10) {
+      opacity: 0;
+      transition: 0s;
+    }
+  }
+}
+
+@container style(--x-steps:11) and style(--y-steps:11) {
+  article {
+    --eaten11: 1;
+    transition: 0s;
+
+    li:nth-of-type(11) {
+      opacity: 0;
+      transition: 0s;
+    }
+  }
+}
+
+@container style(--x-steps:16) and style(--y-steps:11) {
+  article {
+    --eaten12: 1;
+    transition: 0s;
+
+    li:nth-of-type(12) {
+      opacity: 0;
+      transition: 0s;
+    }
+  }
+}
+
+/* ROW 4 */
+
+@container style(--x-steps:1) and style(--y-steps:16) {
+  article {
+    --eaten13: 1;
+    transition: 0s;
+
+    li:nth-of-type(13) {
+      opacity: 0;
+      transition: 0s;
+    }
+  }
+}
+
+@container style(--x-steps:6) and style(--y-steps:16) {
+  article {
+    --eaten14: 1;
+    transition: 0s;
+
+    li:nth-of-type(14) {
+      opacity: 0;
+      transition: 0s;
+    }
+  }
+}
+
+@container style(--x-steps:11) and style(--y-steps:16) {
+  article {
+    --eaten15: 1;
+    transition: 0s;
+
+    li:nth-of-type(15) {
+      opacity: 0;
+      transition: 0s;
+    }
+  }
+}
+
+@container style(--x-steps:16) and style(--y-steps:16) {
+  article {
+    --eaten16: 1;
+    transition: 0s;
+
+    li:nth-of-type(16) {
+      opacity: 0;
+      transition: 0s;
+    }
+  }
+}
+
+/* Dots eaten */
+@property --eaten1 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --eaten2 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --eaten3 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --eaten4 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --eaten5 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --eaten6 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --eaten7 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --eaten8 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --eaten9 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --eaten10 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --eaten11 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --eaten12 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --eaten13 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --eaten14 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --eaten15 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --eaten16 {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 0;
+}

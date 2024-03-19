@@ -15,32 +15,23 @@ article {
     left: 0;
     position: absolute;
   }
+}
 
-  /* The grid with dots */
-  > ul {
-    padding: 0;
-    list-style: none;
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+/* Show player location */
+:root {
+  counter-reset: x-steps var(--x-steps) y-steps var(--y-steps);
+}
 
-    /* A dot */
-    > li {
-      display: grid;
-      place-items: center;
-      place-content: center;
-      width: var(--size-player);
-      aspect-ratio: 1;
+article::before {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  content: counter(x-steps);
+}
 
-      &::before {
-        content: "";
-        display: block;
-        width: calc(var(--size-player) / 4);
-        aspect-ratio: 1;
-        border-radius: 50%;
-        background: white;
-      }
-    }
-  }
+article::after {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  content: counter(y-steps);
 }
