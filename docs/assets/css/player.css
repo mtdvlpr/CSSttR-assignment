@@ -6,30 +6,30 @@ output {
   place-content: center;
   width: var(--size-player);
   aspect-ratio: 1;
-}
 
-output::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: calc(var(--size-player) / 2 - 0.2rem);
-  height: calc(var(--size-player) / 4);
-  background: var(--color-screen);
-  z-index: -1;
-}
+  /* &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: calc(var(--size-player) / 2 - 0.2rem);
+    height: calc(var(--size-player) / 4);
+    background: var(--color-screen);
+    z-index: -1;
+  } */
 
-output::after {
-  content: "";
-  display: block;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  width: calc(var(--size-player) / 2);
-  animation: eat 0.4s linear infinite;
-  background: conic-gradient(
-    var(--color-player) 55deg,
-    transparent 0 125deg,
-    var(--color-player) 0
-  );
+  &::after {
+    content: "";
+    display: block;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    width: calc(var(--size-player) / 2);
+    animation: eat 0.4s linear infinite;
+    background: conic-gradient(
+      var(--color-player) 55deg,
+      transparent 0 125deg,
+      var(--color-player) 0
+    );
+  }
 }
 
 /* Eat animation */

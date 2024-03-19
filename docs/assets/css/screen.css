@@ -1,34 +1,46 @@
 /* Screen */
 
 article {
+  position: relative;
   width: var(--size-screen);
   aspect-ratio: 1;
   background-color: var(--color-screen);
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
   box-shadow: inset 0 0 0 1vmin var(--color-screen),
     inset 0 0 0 1.5vmin var(--color-wall), inset 0 0 0 2vmin var(--color-screen),
     inset 0 0 0 2.5vmin var(--color-wall);
-}
 
-article > output {
-  position: absolute;
-}
+  /* The player starts top left */
+  > output {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
 
-article > div {
-  display: grid;
-  place-items: center;
-  place-content: center;
-  width: var(--size-player);
-  aspect-ratio: 1;
-}
+  /* The grid with dots */
+  > ul {
+    padding: 0;
+    list-style: none;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
 
-article > div::before {
-  content: "";
-  display: block;
-  width: calc(var(--size-player) / 4);
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: white;
+    /* A dot */
+    > li {
+      display: grid;
+      place-items: center;
+      place-content: center;
+      width: var(--size-player);
+      aspect-ratio: 1;
+
+      &::before {
+        content: "";
+        display: block;
+        width: calc(var(--size-player) / 4);
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: white;
+      }
+    }
+  }
 }
