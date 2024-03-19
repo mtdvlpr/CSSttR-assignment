@@ -31,6 +31,7 @@ output {
   }
 }
 
+/* Start animation when a input is checked */
 :root:has(input:checked) {
   output::after {
     animation: eat 0.4s linear infinite;
