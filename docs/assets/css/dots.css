@@ -26,11 +26,10 @@ article > ul {
     width: var(--size-player);
     aspect-ratio: 1;
 
-    transition: var(--transition-dots);
-
     &::before {
       content: "";
       display: block;
+      transition: var(--transition-dots);
       width: calc(var(--size-player) / 4);
       aspect-ratio: 1;
       border-radius: 50%;
@@ -46,7 +45,7 @@ article > ul {
     --eaten1: 1;
     transition: 0s;
 
-    li:nth-of-type(1) {
+    li:nth-of-type(1)::before {
       opacity: 0;
       transition: 0s;
     }
@@ -54,15 +53,11 @@ article > ul {
 }
 
 @container style(--x-steps:6) and style(--y-steps:1) {
-  /* body {
-    transition: --x var(--transition-stop) !important;
-  } */
-
   article {
     --eaten2: 1;
     transition: 0s;
 
-    li:nth-of-type(2) {
+    li:nth-of-type(2)::before {
       opacity: 0;
       transition: 0s;
     }
@@ -74,7 +69,7 @@ article > ul {
     --eaten3: 1;
     transition: 0s;
 
-    li:nth-of-type(3) {
+    li:nth-of-type(3)::before {
       opacity: 0;
       transition: 0s;
     }
@@ -86,7 +81,7 @@ article > ul {
     --eaten4: 1;
     transition: 0s;
 
-    li:nth-of-type(4) {
+    li:nth-of-type(4)::before {
       opacity: 0;
       transition: 0s;
     }
@@ -100,7 +95,7 @@ article > ul {
     --eaten5: 1;
     transition: 0s;
 
-    li:nth-of-type(5) {
+    li:nth-of-type(5)::before {
       opacity: 0;
       transition: 0s;
     }
@@ -112,7 +107,7 @@ article > ul {
     --eaten6: 1;
     transition: 0s;
 
-    li:nth-of-type(6) {
+    li:nth-of-type(6)::before {
       opacity: 0;
       transition: 0s;
     }
@@ -124,7 +119,7 @@ article > ul {
     --eaten7: 1;
     transition: 0s;
 
-    li:nth-of-type(7) {
+    li:nth-of-type(7)::before {
       opacity: 0;
       transition: 0s;
     }
@@ -136,7 +131,7 @@ article > ul {
     --eaten8: 1;
     transition: 0s;
 
-    li:nth-of-type(8) {
+    li:nth-of-type(8)::before {
       opacity: 0;
       transition: 0s;
     }
@@ -150,7 +145,7 @@ article > ul {
     --eaten9: 1;
     transition: 0s;
 
-    li:nth-of-type(9) {
+    li:nth-of-type(9)::before {
       opacity: 0;
       transition: 0s;
     }
@@ -162,7 +157,7 @@ article > ul {
     --eaten10: 1;
     transition: 0s;
 
-    li:nth-of-type(10) {
+    li:nth-of-type(10)::before {
       opacity: 0;
       transition: 0s;
     }
@@ -174,7 +169,7 @@ article > ul {
     --eaten11: 1;
     transition: 0s;
 
-    li:nth-of-type(11) {
+    li:nth-of-type(11)::before {
       opacity: 0;
       transition: 0s;
     }
@@ -186,7 +181,7 @@ article > ul {
     --eaten12: 1;
     transition: 0s;
 
-    li:nth-of-type(12) {
+    li:nth-of-type(12)::before {
       opacity: 0;
       transition: 0s;
     }
@@ -200,7 +195,7 @@ article > ul {
     --eaten13: 1;
     transition: 0s;
 
-    li:nth-of-type(13) {
+    li:nth-of-type(13)::before {
       opacity: 0;
       transition: 0s;
     }
@@ -212,7 +207,7 @@ article > ul {
     --eaten14: 1;
     transition: 0s;
 
-    li:nth-of-type(14) {
+    li:nth-of-type(14)::before {
       opacity: 0;
       transition: 0s;
     }
@@ -224,7 +219,7 @@ article > ul {
     --eaten15: 1;
     transition: 0s;
 
-    li:nth-of-type(15) {
+    li:nth-of-type(15)::before {
       opacity: 0;
       transition: 0s;
     }
@@ -236,7 +231,7 @@ article > ul {
     --eaten16: 1;
     transition: 0s;
 
-    li:nth-of-type(16) {
+    li:nth-of-type(16)::before {
       opacity: 0;
       transition: 0s;
     }

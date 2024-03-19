@@ -57,6 +57,7 @@ article::after {
   content: counter(y-steps);
 }
 
+/* Show winner text */
 @container style(--eaten1:1) and 
   style(--eaten2:1) and 
   style(--eaten3:1) and 
