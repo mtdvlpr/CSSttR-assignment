@@ -10,10 +10,31 @@ article {
     inset 0 0 0 2.5vmin var(--color-wall);
 
   /* The player starts top left */
-  > output {
+  output {
+    position: absolute;
     top: 0;
     left: 0;
+  }
+
+  h2 {
+    display: none;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-player);
+    font-family: "Press Start 2P", cursive;
+    line-height: 40px;
+    letter-spacing: 5px;
+    text-shadow: -2px 0 0 #fdff2a, -4px 0 0 #df4a42, 2px 0 0 #91fcfe,
+      4px 0 0 #4405fc;
+    animation: blink 1s steps(4, start) infinite;
+  }
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
   }
 }
 
@@ -34,4 +55,31 @@ article::after {
   top: 0;
   right: 100%;
   content: counter(y-steps);
+}
+
+@container style(--eaten2:1) {
+  article h2 {
+    display: block !important;
+  }
+}
+
+@container style(--eaten1:1) and 
+  style(--eaten2:1) and 
+  style(--eaten3:1) and 
+  style(--eaten4:1) and
+	style(--eaten5:1) and
+	style(--eaten6:1) and
+	style(--eaten7:1) and
+	style(--eaten8:1) and
+	style(--eaten9:1) and
+	style(--eaten10:1) and
+	style(--eaten11:1) and
+	style(--eaten12:1) and
+	style(--eaten13:1) and
+	style(--eaten14:1) and
+	style(--eaten15:1) and
+	style(--eaten16:1) {
+  article h2 {
+    display: block !important;
+  }
 }

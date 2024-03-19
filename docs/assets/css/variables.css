@@ -21,4 +21,7 @@
   --transition-stop: 10000s linear; /* Stop speed */
   --transition-player: 2s linear; /* Player speed */
   --transition-dots: 1s 30s; /* Time to eat dots */
+
+  /* Fonts */
+  --font-pacman: "arcade", sans-serif;
 }

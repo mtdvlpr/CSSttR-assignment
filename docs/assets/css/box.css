@@ -9,15 +9,10 @@ main * {
   transform-style: preserve-3d;
 }
 
-@font-face {
-  font-family: "arcade";
-  src: url("./../font/PacfontGood-yYye.ttf") format("truetype");
-}
-
 /* Top */
 h1 {
   color: var(--color-player);
-  font-family: "arcade", sans-serif;
+  font-family: var(--font-pacman);
   width: var(--size-body);
   background: var(--color-body);
   transform: translateZ(var(--top-depth)) translateY(var(--top-depth));

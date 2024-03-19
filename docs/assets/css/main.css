@@ -7,6 +7,11 @@
 @import url("./box.css");
 @import url("./dots.css");
 
+@font-face {
+  font-family: "arcade";
+  src: url("./../font/PacfontGood-yYye.ttf") format("truetype");
+}
+
 /* The scene */
 body {
   margin: 0;
