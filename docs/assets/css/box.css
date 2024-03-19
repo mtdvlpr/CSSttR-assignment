@@ -38,12 +38,19 @@ main > section {
 }
 
 /* Bottom */
-footer > div {
-  position: absolute;
-  bottom: 0;
-  background: black;
-  height: var(--size-bottom);
-  width: var(--size-body);
-  transform: translateY(var(--size-bottom)) rotateX(-0.1turn);
+footer {
+  transform: rotateX(0.1turn);
   transform-origin: top;
+  background: var(--color-controls);
+  width: var(--size-body);
+
+  > div {
+    position: absolute;
+    bottom: 0;
+    background: black;
+    height: var(--size-bottom);
+    width: var(--size-body);
+    transform: translateY(var(--size-bottom)) rotateX(-0.1turn);
+    transform-origin: top;
+  }
 }

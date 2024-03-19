@@ -1,11 +1,5 @@
 /* Dots */
-article > ul {
-  padding: 0;
-  list-style: none;
-  display: grid;
-  place-items: center;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+article {
   transition: --eaten1 var(--transition-dots), --eaten2 var(--transition-dots),
     --eaten3 var(--transition-dots), --eaten4 var(--transition-dots),
     --eaten5 var(--transition-dots), --eaten6 var(--transition-dots),
@@ -14,6 +8,15 @@ article > ul {
     --eaten11 var(--transition-dots), --eaten12 var(--transition-dots),
     --eaten13 var(--transition-dots), --eaten14 var(--transition-dots),
     --eaten15 var(--transition-dots), --eaten16 var(--transition-dots);
+}
+
+article > ul {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 
   /* A dot */
   > li {
@@ -51,6 +54,10 @@ article > ul {
 }
 
 @container style(--x-steps:6) and style(--y-steps:1) {
+  /* body {
+    transition: --x var(--transition-stop) !important;
+  } */
+
   article {
     --eaten2: 1;
     transition: 0s;

@@ -57,12 +57,6 @@ article::after {
   content: counter(y-steps);
 }
 
-@container style(--eaten2:1) {
-  article h2 {
-    display: block !important;
-  }
-}
-
 @container style(--eaten1:1) and 
   style(--eaten2:1) and 
   style(--eaten3:1) and 

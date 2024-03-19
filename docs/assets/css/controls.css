@@ -2,9 +2,6 @@
 
 /* D-pad */
 footer {
-  transform: rotateX(0.1turn);
-  transform-origin: top;
-  background: var(--color-controls);
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
@@ -12,7 +9,6 @@ footer {
     ".      up        ."
     "left    .    right"
     ".     down       .";
-  width: var(--size-body);
   transition: 0.1s;
 
   /* Inspiration: https://codepen.io/thierrymichel/pen/Pwzbmd */
