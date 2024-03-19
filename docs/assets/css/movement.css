@@ -1,55 +1,59 @@
 /* Movement */
 
-:root {
-  /* Transition back very slowly */
-  transition: --x 10000s linear, --y 10000s linear;
-
-  /* Player location in steps */
-  --steps: calc(var(--size-grid) * var(--size-grid));
-  --x-steps: max(calc(var(--x, 0) * var(--steps) + 0.49), 1);
-  --y-steps: max(calc(var(--y, 0) * var(--steps) + 0.49), 1);
-
-  /* Move player */
-  &:has(button:active) {
-    transition: --x var(--transition-player) linear,
-      --y var(--transition-player) linear;
-  }
-}
-
 /* Set player position */
 output {
   translate: calc((var(--size-screen) - var(--size-player)) * var(--x, 0))
     calc((var(--size-screen) - var(--size-player)) * var(--y, 0));
 }
 
-/* Listen for button active to change move animation */
+:root {
+  /* Transition back very slowly */
+  transition: --x var(--transition-stop), --y var(--transition-stop);
 
-/* Up */
-:root:has(button:nth-of-type(1):active) {
-  --y: 0.00001;
-  output {
-    transform: rotate(-90deg);
+  /* Player location in steps */
+  --steps: calc(var(--size-grid) * var(--size-grid));
+  --x-steps: max(calc(var(--x, 0) * var(--steps) + 0.49), 1);
+  --y-steps: max(calc(var(--y, 0) * var(--steps) + 0.49), 1);
+
+  /* Move player up/down */
+  &:has(input:nth-of-type(1):checked),
+  &:has(input:nth-of-type(4):checked) {
+    transition: --x var(--transition-stop), --y var(--transition-player);
   }
-}
 
-/* Left */
-:root:has(button:nth-of-type(2):active) {
-  --x: 0.00001;
-  output {
-    transform: rotate(180deg);
+  /* Move player left/right */
+  &:has(input:nth-of-type(2):checked),
+  &:has(input:nth-of-type(3):checked) {
+    transition: --x var(--transition-player), --y var(--transition-stop);
   }
-}
 
-/* Right */
-:root:has(button:nth-of-type(3):active) {
-  --x: 1;
-}
+  /* Up */
+  &:has(input:nth-of-type(1):checked) {
+    --y: 0.00001;
+    output {
+      transform: rotate(-90deg);
+    }
+  }
 
-/* Down */
-:root:has(button:nth-of-type(4):active) {
-  --y: 1;
-  output {
-    transform: rotate(90deg);
+  /* Left */
+  &:has(input:nth-of-type(2):checked) {
+    --x: 0.00001;
+    output {
+      transform: rotate(180deg);
+    }
+  }
+
+  /* Right */
+  &:has(input:nth-of-type(3):checked) {
+    --x: 1;
+  }
+
+  /* Down */
+  &:has(input:nth-of-type(4):checked) {
+    --y: 1;
+    output {
+      transform: rotate(90deg);
+    }
   }
 }
 

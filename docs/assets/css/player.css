@@ -23,12 +23,17 @@ output {
     aspect-ratio: 1;
     border-radius: 50%;
     width: calc(var(--size-player) / 2);
-    animation: eat 0.4s linear infinite;
     background: conic-gradient(
       var(--color-player) 55deg,
       transparent 0 125deg,
       var(--color-player) 0
     );
+  }
+}
+
+:root:has(input:checked) {
+  output::after {
+    animation: eat 0.4s linear infinite;
   }
 }
 

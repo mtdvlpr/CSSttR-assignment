@@ -18,6 +18,7 @@
   --top-depth: 3rem;
 
   /* Transitions */
-  --transition-player: 2s; /* Player speed */
+  --transition-stop: 10000s linear; /* Stop speed */
+  --transition-player: 2s linear; /* Player speed */
   --transition-dots: 1s 30s; /* Time to eat dots */
 }
