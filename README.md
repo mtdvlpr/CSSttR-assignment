@@ -46,6 +46,8 @@ I made the button in the arcade style and got the 3D working.
 
 ![second](https://github.com/mtdvlpr/CSSttR-assignment/assets/46671786/ea789e9b-c870-4064-930b-1abe7764c104)
 
+### Start of the week
+
 I tried to add walls using `@container style` queries, but I couldn't get it to work, because it could only target the `--x` and `--y` min/max values and not the intermediate values. I tried setting the `--x` and `--y` values at the root and multiply them with 1000, set other, set bigger values that would be easier to calculate the step for, but nothing worked.  I used the following code to test the functionality:
 
 ```css
@@ -59,3 +61,11 @@ I tried to add walls using `@container style` queries, but I couldn't get it to 
 ```
 
 I tried to make it more in line with the actual game by having the pacman move indefinitely, using anchor links, but I couldn't get it to work, because the previous animation would reset when the link was clicked, which caused the pacman to move in a weird diagonal way.
+
+### End of the week
+
+I did not manage to add walls, but I did add eatable dots that dissapear when the pacman eats them. I also managed to make the pacman move indefinitely, but I had to use radio buttons instead of links. I also added a winner text when all the dots are eaten.
+
+## Reflection
+
+I learned a lot about CSS, especially about container style queries and animations. I also used CSS nesting for the first time. I've used nesting in SASS before, but never in pure CSS. I think it's very nice that this feature was added in CSS. I am happy with the result, but I would have liked to add walls and ghosts as well.
