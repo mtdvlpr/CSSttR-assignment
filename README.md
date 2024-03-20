@@ -42,7 +42,7 @@ The rest of the week, I was unable to work on the assignment, due to personal ci
 
 ## Week 4 - Final work
 
-I made the button in the arcade style and got the 3D working.
+I made the buttons in arcade style and got the 3D working.
 
 ![second](https://github.com/mtdvlpr/CSSttR-assignment/assets/46671786/ea789e9b-c870-4064-930b-1abe7764c104)
 
