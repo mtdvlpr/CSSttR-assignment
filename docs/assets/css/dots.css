@@ -34,7 +34,27 @@ article > ul {
       aspect-ratio: 1;
       border-radius: 50%;
       background: white;
+      animation: gelatine 5s infinite;
     }
+  }
+}
+
+@keyframes gelatine {
+  from,
+  to {
+    transform: scale(1, 1);
+  }
+  2% {
+    transform: scale(0.9, 1.1);
+  }
+  4% {
+    transform: scale(1.1, 0.9);
+  }
+  6% {
+    transform: scale(0.95, 1.05);
+  }
+  8% {
+    transform: scale(1, 1);
   }
 }
 
