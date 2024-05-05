@@ -22,4 +22,5 @@ body {
   place-content: center;
 
   background-image: linear-gradient(dodgerblue, lightskyblue);
+  background-image: linear-gradient(in oklch, dodgerblue, lightskyblue);
 }

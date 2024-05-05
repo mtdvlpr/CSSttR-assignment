@@ -16,12 +16,14 @@ h1 {
   font-family: var(--font-pacman);
   width: var(--size-body);
   background: var(--color-body);
+  background: var(--color-body-oklch);
   transform: translateZ(var(--top-depth)) translateY(var(--top-depth));
 }
 
 /* Top bottom */
 main > div {
   background: var(--color-controls);
+  background: var(--color-controls-oklch);
   height: var(--top-depth);
   transform: rotateX(-0.25turn);
   transform-origin: bottom;
@@ -35,6 +37,7 @@ main > section {
   width: var(--size-body);
   aspect-ratio: 1;
   background: var(--color-body);
+  background: var(--color-body-oklch);
 }
 
 /* Bottom */
@@ -42,6 +45,7 @@ footer {
   transform: rotateX(0.1turn);
   transform-origin: top;
   background: var(--color-controls);
+  background: var(--color-controls-oklch);
   width: var(--size-body);
 
   > div {

@@ -23,6 +23,7 @@ article {
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--color-player);
+    color: var(--color-player-oklch);
     font-family: "Press Start 2P", cursive;
     line-height: 40px;
     letter-spacing: 5px;

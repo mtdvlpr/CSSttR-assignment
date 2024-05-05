@@ -9,9 +9,12 @@
 
   /* Colors */
   --color-player: #fcec0f;
+  --color-player-oklch: oklch(92.65% 0.194 104.53);
   --color-screen: #222;
   --color-body: rgb(183, 0, 255);
+  --color-body-oklch: oklch(59.84% 0.301 310.74);
   --color-controls: rgb(98, 4, 136);
+  --color-controls-oklch: oklch(38.02% 0.187 311.64);
   --color-wall: #5558ff;
 
   /* Depths */

@@ -28,6 +28,11 @@ output {
       transparent 0 125deg,
       var(--color-player) 0
     );
+    background: conic-gradient(
+      var(--color-player-oklch) 55deg,
+      transparent 0 125deg,
+      var(--color-player-oklch) 0
+    );
   }
 }
 
