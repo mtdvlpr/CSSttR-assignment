@@ -69,3 +69,7 @@ I did not manage to add walls, but I did add eatable dots that dissapear when th
 ## Reflection
 
 I learned a lot about CSS, especially about container style queries and animations. I also used CSS nesting for the first time. I've used nesting in SASS before, but never in pure CSS. I think it's very nice that this feature was added in CSS. I am happy with the result, but I would have liked to add walls and ghosts as well.
+
+## Retake
+
+For the retake I have added an animation for the dots Pacman eats. They act like gelatine. I also added animated ghosts that move across the screen and I've used the CSS level 4 `oklch` color space.
