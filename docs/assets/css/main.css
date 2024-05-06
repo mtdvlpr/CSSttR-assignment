@@ -6,6 +6,7 @@
 @import url("./screen.css");
 @import url("./box.css");
 @import url("./dots.css");
+@import url("./ghosts.css");
 
 @font-face {
   font-family: "arcade";

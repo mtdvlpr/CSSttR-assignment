@@ -2,6 +2,7 @@
   /* Sizes */
   --size-grid: 4;
   --size-player: 4rem;
+  --size-ghost: 50px;
   --size-screen: calc(var(--size-grid) * var(--size-player));
   --size-body: calc(var(--size-screen) + 2rem);
   --size-bottom: 10rem;
