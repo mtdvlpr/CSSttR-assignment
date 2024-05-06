@@ -74,5 +74,5 @@ I learned a lot about CSS, especially about container style queries and animatio
 
 For the retake I have added an animation for the dots Pacman eats. They act like gelatine. I also added animated ghosts that move across the screen and I've used the CSS level 4 `oklch` color space.
 
-![Screenshot 2024-05-06 102230](https://github.com/mtdvlpr/CSSttR-assignment/assets/46671786/dc3bed6c-c440-46dc-afdb-b26ddfb5510d)
+![Screenshot 2024-05-06 102435](https://github.com/mtdvlpr/CSSttR-assignment/assets/46671786/7f727b45-8c98-4a1a-947e-9fc0b1701cd6)
 
