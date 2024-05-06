@@ -21,7 +21,8 @@ body > img {
 
   &:nth-of-type(3) {
     left: 150%;
-    transform: translateX(calc(-1 * var(--size-ghost)));
+    transform: translateX(calc(-1 * var(--size-ghost))) rotate(180deg)
+      scaleX(-1);
     animation: moveLeft 5s linear 1s infinite;
   }
 
